@@ -1,0 +1,38 @@
+class BooleanTest
+{
+	String s1 = "";
+	String s2 = "";
+	
+	boolean val=false;
+	
+	public void setBooleanValue()
+	{
+		System.out.print("Enter value for S1: ");
+		s1 = System.console().readLine();
+		
+		System.out.print("Enter value for S2: ");
+		s2 = System.console().readLine();
+		
+		if(s1.equals(s2)) val = true;
+		
+		System.out.println("Contents in S1 & S2 Are same? : " +val);
+	}
+	
+	public static void main(String[] args)
+	  {
+		 new BooleanTest().setBooleanValue();
+	  }
+}
+	
+  
+  
+  
+Output: Enter value for S1: ram
+        Enter value for S2: Ram
+        Contents in S1 & S2 Are same? : false
+        
+        Enter value for S1: Ram
+        Enter value for S2: Ram
+        Contents in S1 & S2 Are same? : true
+        
+        
